@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitRota</title>
+  <link rel="icon" type="image/png" href="dceea2f9-aaab-452e-a951-84cc4370a870.png"> <!-- CHATTEN BAKILDI-->
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: black;
+      background-image: linear-gradient(
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.60)
+      ), url('sporarkaplan.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .giris-paneli {
+      width: 94%;
+      max-width: 680px;
+      margin: 24px auto;
+      padding: 28px 24px 32px;
+      background-color: rgba(18, 22, 24, 0.90);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 18px;
+      text-align: center;
+    }
+
+    .logo-alani {
+      margin: 0 0 12px;
+    }
+
+    .logo-alani img {
+      height: 180px;
+      max-width: 100%;
+      width: auto;
+    }
+
+    .baslik {
+      margin: 0 0 24px;
+      color: #36dfb0;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .giris-formu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .giris-input {
+      width: 100%;
+      max-width: 320px;
+      background-color: #152536;
+      color: white;
+      border: 2px solid #36dfb0;
+      border-radius: 6px;
+      padding: 9px 12px;
+      font-size: 16px;
+    }
+
+    .giris-input::placeholder {
+      color: rgba(255, 255, 255, 0.65);
+    }
+
+    .giris-butonu {
+      margin-top: 6px;
+      background-color: #36dfb0;
+      color: black;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      cursor: pointer;
+    }
+
+    .kayit-metni {
+      margin: 18px 0 0;
+      color: white;
+      font-size: 16px;
+    }
+
+    .kayit-metni a {
+      color: #36dfb0;
+    }
+  </style>
+</head>
+<body>
+  <div class="giris-paneli">
+    <!-- arka plan için yazılan kod CHATTEN ALINDI
+     linear-gradient  fotoğrafın üzerine koyu bir katman eklemek için kullandık
+      0.45Siyah katmanın %45 görünürlüğü
+      cover arka plan komple kaplar
+      fixed arka plan fotonun sabit kalmasını sağlar
+      -->
+    <!--  giriş ekranımda spor temasını daha belirgin yapmak için arka plana dambıl fotoğrafı ekledim 
+     Fotoğrafın üzerindeki yazıların okunabilmesi için
+      linear-gradient ve rgba kullanarak siyah yarı saydam bir katman oluşturdum background-size: cover ile
+       fotoğrafın ekranı kaplamasını, background-position: center ile ortalanmasını sağladım
+       background-repeat ile tekrar etmesini engelledim
+      background-attachment: fixed ile de arka planı sabitledim-->
+
+    <p class="logo-alani">
+      <img src="FİTTOTASEFFAF.png" alt="FitRoto_Logo">
+    </p>
+
+    <h2 class="baslik">
+      FitRota'ya Hoş Geldiniz!
+    </h2>
+
+    <form class="giris-formu" action="index.html">
+      <input
+        class="giris-input"
+        type="email"
+        name="E-posta"
+        id="E-posta"
+        placeholder="E-posta adresinizi giriniz"
+        required
+      >
+
+      <!--inline kutucukları eşitledi hızaya getirdi -->
+      <input
+        class="giris-input"
+        type="password"
+        name="şifre"
+        id="şifre"
+        placeholder="Şifrenizi giriniz"
+        required
+      >
+
+      <!--radiusla yuvarlak yapıldı 
+      padding enı boyu ayarlandı
+      family yazı tipini değiştirdi-->
+      <input
+        class="giris-butonu"
+        type="submit"
+        value="Giriş Yap ➜"
+      >
+
+      <p class="kayit-metni">
+        Hesabınız yok mu?
+        <a href="kayit.html">Kayıt Ol</a>
+      </p>
+    </form>
+  </div>
+</body>
+</html>
